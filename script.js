@@ -1,3 +1,15 @@
+let currentLang = "en";
+
+function toggleLanguage() {
+    currentLang = currentLang === "en" ? "hi" : "en";
+
+    document.querySelectorAll("[data-en]").forEach(el => {
+        el.textContent = currentLang === "en"
+            ? el.getAttribute("data-en")
+            : el.getAttribute("data-hi");
+    });
+}
+
 function showHelp() {
     document.getElementById("help").scrollIntoView({
         behavior: "smooth"
@@ -156,7 +168,3 @@ style.innerHTML = `
 `;
 
 document.head.appendChild(style);
-    document.getElementById("help").scrollIntoView({
-        behavior: "smooth"
-    });
-
