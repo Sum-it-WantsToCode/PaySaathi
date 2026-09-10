@@ -16,11 +16,11 @@
         <div class="logo">💳 PaySaathi</div>
 
         <nav>
-            <a href="#home">Home</a>
-            <a href="#help">Payment Help</a>
-            <a href="#safety">Safety</a>
-            <a href="#about">About</a>
-            <button onclick="toggleLanguage()" id="languageBtn">हिंदी</button>
+            <a href="#home" data-en="Home" data-hi="होम">Home</a>
+            <a href="#help" data-en="Payment Help" data-hi="भुगतान सहायता">Payment Help</a>
+            <a href="#safety" data-en="Safety" data-hi="सुरक्षा">Safety</a>
+            <a href="#about" data-en="About" data-hi="हमारे बारे में">About</a>
+            <button onclick="toggleLanguage()" id="languageBtn" data-en="हिंदी" data-hi="English">हिंदी</button>
         </nav>
     </header>
 
@@ -30,19 +30,19 @@
 
         <div class="hero-text">
 
-            <p class="tag">DIGITAL PAYMENT SUPPORT</p>
+            <p class="tag" data-en="DIGITAL PAYMENT SUPPORT" data-hi="डिजिटल भुगतान सहायता">DIGITAL PAYMENT SUPPORT</p>
 
             <h1>
-                Digital Payment Helper
-                <span>for Youngsters </span>
+                <span data-en="Digital Payment Helper" data-hi="डिजिटल भुगतान सहायक">Digital Payment Helper</span>
+                <span data-en="for Youngsters" data-hi="युवाओं के लिए">for Youngsters </span>
             </h1>
 
-            <p>
+            <p data-en="Simple guidance for digital payments, payment problems and online safety." data-hi="डिजिटल भुगतान, भुगतान समस्याओं और ऑनलाइन सुरक्षा के लिए सरल मार्गदर्शन।">
                 Simple guidance for digital payments,
                 payment problems and online safety.
             </p>
 
-            <button onclick="showHelp()">
+            <button onclick="showHelp()" data-en="Get Payment Help →" data-hi="भुगतान सहायता पाएं →">
                 Get Payment Help →
             </button>
 
@@ -51,17 +51,17 @@
         <div class="hero-card">
             <div class="phone">📱</div>
             <h3>PaySaathi</h3>
-            <p>Your simple digital payment companion.</p>
+            <p data-en="Your simple digital payment companion." data-hi="आपका सरल डिजिटल भुगतान साथी।">Your simple digital payment companion.</p>
 
-            <div class="status">
+            <div class="status" data-en="✓ Easy to understand" data-hi="✓ समझने में आसान">
                 ✓ Easy to understand
             </div>
 
-            <div class="status">
+            <div class="status" data-en="✓ Safety focused" data-hi="✓ सुरक्षा पर केंद्रित">
                 ✓ Safety focused
             </div>
 
-            <div class="status">
+            <div class="status" data-en="✓ Quick solutions" data-hi="✓ त्वरित समाधान">
                 ✓ Quick solutions
             </div>
         </div>
@@ -73,11 +73,11 @@
     <section id="help">
 
         <div class="section-title">
-            <p class="tag">HOW CAN WE HELP?</p>
+            <p class="tag" data-en="HOW CAN WE HELP?" data-hi="हम कैसे मदद कर सकते हैं?">HOW CAN WE HELP?</p>
 
-            <h2>Choose Your Payment Problem</h2>
+            <h2 data-en="Choose Your Payment Problem" data-hi="अपनी भुगतान समस्या चुनें">Choose Your Payment Problem</h2>
 
-            <p>
+            <p data-en="Select a problem to get simple step-by-step guidance." data-hi="सरल चरण-दर-चरण मार्गदर्शन पाने के लिए एक समस्या चुनें।">
                 Select a problem to get simple step-by-step guidance.
             </p>
         </div>
@@ -87,8 +87,8 @@
 
             <div class="card" onclick="paymentFailed()">
                 <div class="icon">❌</div>
-                <h3>Payment Failed</h3>
-                <p>
+                <h3 data-en="Payment Failed" data-hi="भुगतान विफल">Payment Failed</h3>
+                <p data-en="Payment failed or did not go through?" data-hi="भुगतान विफल हो गया या पूरा नहीं हुआ?">
                     Payment failed or did not go through?
                 </p>
             </div>
@@ -96,8 +96,8 @@
 
             <div class="card" onclick="networkProblem()">
                 <div class="icon">📶</div>
-                <h3>Network Problem</h3>
-                <p>
+                <h3 data-en="Network Problem" data-hi="नेटवर्क समस्या">Network Problem</h3>
+                <p data-en="Having internet or network issues?" data-hi="इंटरनेट या नेटवर्क में समस्या हो रही है?">
                     Having internet or network issues?
                 </p>
             </div>
@@ -105,8 +105,8 @@
 
             <div class="card" onclick="fraudHelp()">
                 <div class="icon">🛡️</div>
-                <h3>Fraud & Safety</h3>
-                <p>
+                <h3 data-en="Fraud &amp; Safety" data-hi="धोखाधड़ी और सुरक्षा">Fraud &amp; Safety</h3>
+                <p data-en="Learn how to stay safe from payment fraud." data-hi="भुगतान धोखाधड़ी से सुरक्षित रहना सीखें।">
                     Learn how to stay safe from payment fraud.
                 </p>
             </div>
@@ -114,8 +114,8 @@
 
             <div class="card" onclick="paymentGuide()">
                 <div class="icon">📖</div>
-                <h3>Payment Guide</h3>
-                <p>
+                <h3 data-en="Payment Guide" data-hi="भुगतान गाइड">Payment Guide</h3>
+                <p data-en="Learn digital payment steps easily." data-hi="डिजिटल भुगतान के चरण आसानी से सीखें।">
                     Learn digital payment steps easily.
                 </p>
             </div>
@@ -129,20 +129,20 @@
     <section id="safety" class="safety">
 
         <div class="section-title">
-            <p class="tag">STAY SAFE</p>
+            <p class="tag" data-en="STAY SAFE" data-hi="सुरक्षित रहें">STAY SAFE</p>
 
-            <h2>Digital Payment Safety Tips</h2>
+            <h2 data-en="Digital Payment Safety Tips" data-hi="डिजिटल भुगतान सुरक्षा सुझाव">Digital Payment Safety Tips</h2>
         </div>
 
         <div class="tips">
 
-            <div>🔐 Never share your UPI PIN.</div>
+            <div data-en="🔐 Never share your UPI PIN." data-hi="🔐 अपना UPI पिन कभी साझा न करें।">🔐 Never share your UPI PIN.</div>
 
-            <div>📱 Check the receiver before paying.</div>
+            <div data-en="📱 Check the receiver before paying." data-hi="📱 भुगतान करने से पहले प्राप्तकर्ता की जांच करें।">📱 Check the receiver before paying.</div>
 
-            <div>🚨 Don't trust unknown payment messages.</div>
+            <div data-en="🚨 Don't trust unknown payment messages." data-hi="🚨 अनजान भुगतान संदेशों पर भरोसा न करें।">🚨 Don't trust unknown payment messages.</div>
 
-            <div>🔎 Verify suspicious requests before acting.</div>
+            <div data-en="🔎 Verify suspicious requests before acting." data-hi="🔎 कार्रवाई करने से पहले संदिग्ध अनुरोधों की पुष्टि करें।">🔎 Verify suspicious requests before acting.</div>
 
         </div>
 
@@ -152,17 +152,17 @@
     <!-- About Section -->
     <section id="about" class="about">
 
-        <p class="tag">OUR PROJECT</p>
+        <p class="tag" data-en="OUR PROJECT" data-hi="हमारा प्रोजेक्ट">OUR PROJECT</p>
 
-        <h2>Why did we build PaySaathi?</h2>
+        <h2 data-en="Why did we build PaySaathi?" data-hi="हमने PaySaathi क्यों बनाया?">Why did we build PaySaathi?</h2>
 
-        <p>
+        <p data-en="Our project studies the adoption of online payment applications among Youngsters and identifies common problems faced while using digital payments." data-hi="हमारा प्रोजेक्ट युवाओं के बीच ऑनलाइन भुगतान ऐप्लिकेशन के उपयोग का अध्ययन करता है और डिजिटल भुगतान के दौरान आने वाली आम समस्याओं की पहचान करता है।">
             Our project studies the adoption of online payment
             applications among Youngsters and identifies
             common problems faced while using digital payments.
         </p>
 
-        <p>
+        <p data-en="Based on our survey responses, PaySaathi provides simple guidance and safety information to help users understand digital payments better." data-hi="हमारे सर्वेक्षण के जवाबों के आधार पर, PaySaathi उपयोगकर्ताओं को डिजिटल भुगतान बेहतर ढंग से समझने में मदद के लिए सरल मार्गदर्शन और सुरक्षा जानकारी प्रदान करता है।">
             Based on our survey responses, PaySaathi provides
             simple guidance and safety information to help users
             understand digital payments better.
@@ -173,7 +173,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 PaySaathi | Online Payment App Adoption Study</p>
+        <p data-en="© 2026 PaySaathi | Online Payment App Adoption Study" data-hi="© 2026 PaySaathi | ऑनलाइन भुगतान ऐप अपनाने का अध्ययन">© 2026 PaySaathi | Online Payment App Adoption Study</p>
     </footer>
 
 
