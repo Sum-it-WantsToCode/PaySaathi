@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Payment Helper</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">💳 PaySaathi</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#help">Payment Help</a>
+            <a href="#safety">Safety</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p class="tag">DIGITAL PAYMENT SUPPORT</p>
+
+            <h1>
+                Digital Payment Helper
+                <span>for Youngsters </span>
+            </h1>
+
+            <p>
+                Simple guidance for digital payments,
+                payment problems and online safety.
+            </p>
+
+            <button onclick="showHelp()">
+                Get Payment Help →
+            </button>
+
+        </div>
+
+        <div class="hero-card">
+            <div class="phone">📱</div>
+            <h3>PaySaathi</h3>
+            <p>Your simple digital payment companion.</p>
+
+            <div class="status">
+                ✓ Easy to understand
+            </div>
+
+            <div class="status">
+                ✓ Safety focused
+            </div>
+
+            <div class="status">
+                ✓ Quick solutions
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Help Section -->
+    <section id="help">
+
+        <div class="section-title">
+            <p class="tag">HOW CAN WE HELP?</p>
+
+            <h2>Choose Your Payment Problem</h2>
+
+            <p>
+                Select a problem to get simple step-by-step guidance.
+            </p>
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card" onclick="paymentFailed()">
+                <div class="icon">❌</div>
+                <h3>Payment Failed</h3>
+                <p>
+                    Payment failed or did not go through?
+                </p>
+            </div>
+
+
+            <div class="card" onclick="networkProblem()">
+                <div class="icon">📶</div>
+                <h3>Network Problem</h3>
+                <p>
+                    Having internet or network issues?
+                </p>
+            </div>
+
+
+            <div class="card" onclick="fraudHelp()">
+                <div class="icon">🛡️</div>
+                <h3>Fraud & Safety</h3>
+                <p>
+                    Learn how to stay safe from payment fraud.
+                </p>
+            </div>
+
+
+            <div class="card" onclick="paymentGuide()">
+                <div class="icon">📖</div>
+                <h3>Payment Guide</h3>
+                <p>
+                    Learn digital payment steps easily.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Safety Section -->
+    <section id="safety" class="safety">
+
+        <div class="section-title">
+            <p class="tag">STAY SAFE</p>
+
+            <h2>Digital Payment Safety Tips</h2>
+        </div>
+
+        <div class="tips">
+
+            <div>🔐 Never share your UPI PIN.</div>
+
+            <div>📱 Check the receiver before paying.</div>
+
+            <div>🚨 Don't trust unknown payment messages.</div>
+
+            <div>🔎 Verify suspicious requests before acting.</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+
+        <p class="tag">OUR PROJECT</p>
+
+        <h2>Why did we build PaySaathi?</h2>
+
+        <p>
+            Our project studies the adoption of online payment
+            applications among Youngsters and identifies
+            common problems faced while using digital payments.
+        </p>
+
+        <p>
+            Based on our survey responses, PaySaathi provides
+            simple guidance and safety information to help users
+            understand digital payments better.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 PaySaathi | Online Payment App Adoption Study</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
